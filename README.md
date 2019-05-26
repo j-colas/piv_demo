@@ -9,7 +9,7 @@ N gaussian particles located randomly in the first frame. Affine transformation 
 Frames are subdivided in smaller region of interest (ROI). We compute the zero-mean cross correlation (ZMCC) with Fast Fourier Transform on each ROI two by two (ROI_frame_1, ROI_frame_2). The displacement is estimated by finding the location of the maximum in the result of the ZMCC.
 
 ## Example of motions
-We tested different kind of motion :
+We tested different motions :
 #### [1] Shearing 
 #### [2] Translation 
 #### [3] Rotation 
