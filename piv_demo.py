@@ -150,17 +150,19 @@ ax[2].quiver(y01,x01,-uy1,ux1, pivot='mid', color='k')
 ax[0].set_title("Frame 1")
 ax[1].set_title("Frame 2")
 ax[2].set_title("Displ. Field")
+ax[0].set_ylabel("[1] Shearing")
 
 ax[3].imshow(frame_1)
 ax[4].imshow(frame_3)
 ax[5].imshow(np.zeros(img.shape))
 ax[5].quiver(y02,x02,-uy2,ux2, pivot='mid', color='k')
+ax[3].set_ylabel("[2] Translation")
 
 ax[6].imshow(frame_1)
 ax[7].imshow(frame_4)
 ax[8].imshow(np.zeros(img.shape))
 ax[8].quiver(y03,x03,-uy3,ux3, pivot='mid', color='k')
-
+ax[6].set_ylabel("[3] Rotation")
 
 #plt.subplots_adjust(wspace=0, hspace=0)
 plt.tight_layout()
