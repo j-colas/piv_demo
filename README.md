@@ -3,7 +3,7 @@ Simple Particle Image Velocimetry algorithm demo based on zero-mean cross correl
 
 ## Description 
 ### 1/ Images generation 
-N gaussian particles located randomly in the first frame. Affine transformation applied to the first frame to generate the second one. Gaussian noise is added.  
+N gaussian particles are located randomly in the first frame. We applied an Affine transformation to the first frame to generate the second one. Gaussian noise is added.  
 
 ### 2/ PIV 
 Frames are subdivided in smaller region of interest (ROI). We compute the zero-mean cross correlation (ZMCC) with Fast Fourier Transform on each ROI two by two (ROI_frame_1, ROI_frame_2). The displacement is estimated by finding the location of the maximum in the result of the ZMCC.
